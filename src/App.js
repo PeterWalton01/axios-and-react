@@ -1,6 +1,5 @@
 import "./App.css";
 import Jokes from "./components/Jokes";
-import Posts from "./components/Posts";
 
 function App() {
   return (

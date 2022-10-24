@@ -9,9 +9,14 @@ const Posts = () => {
     axiosFetch({ axiosInstance: axios, method: "GET", url: "/posts" });
   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  useEffect(
+    () => {
+      getData();
+    },
+    // eslint-disable-next-line
+
+    []
+  );
 
   console.log(posts);
 
